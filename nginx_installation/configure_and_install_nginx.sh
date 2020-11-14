@@ -58,3 +58,4 @@ cd ./source/nginx-1.18.0
 	    --with-debug
 make
 sudo make install
+cd ../../
