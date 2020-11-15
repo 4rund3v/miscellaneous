@@ -6,5 +6,5 @@
 ---
 ### Installation
 `cd nginx_installation`
-`./setup_nginx.sh`
+`./nginx_setup.sh`
 ---

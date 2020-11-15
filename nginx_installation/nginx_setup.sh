@@ -1,4 +1,3 @@
-
 echo "This script installs nginx 1.18.0 as a service."
 
 echo "Downloading the necessary contents."
