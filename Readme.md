@@ -5,6 +5,6 @@
    - VOD for mp4
 ---
 ### Installation
-`cd nginx_installation
- ./setup_nginx.sh`
+`cd nginx_installation`
+`./setup_nginx.sh`
 ---
