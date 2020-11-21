@@ -11,7 +11,7 @@ sudo nginx -t
 # Will throw this error -> nginx: [emerg] mkdir() "/var/cache/nginx/client_temp" failed (2: No such file or directory)
 
 # Create NGINX cache directories and set proper permissions
-sudo mkdir -p /var/cache/nginx/client_temp /var/cache/nginx/fastcgi_temp /var/cache/nginx/proxy_temp /var/cache/nginx/scgi_temp /var/cache/nginx/uwsgi_temp
+sudo mkdir -p /var/cache/nginx/{client_temp,fastcgi_temp,proxy_temp,scgi_temp,uwsgi_temp}
 sudo chmod 700 /var/cache/nginx/*
 sudo chown nginx:root /var/cache/nginx/*
 
@@ -19,7 +19,7 @@ sudo chown nginx:root /var/cache/nginx/*
 sudo nginx -t
 
 echo "Creating the nginx service."
-sudo cp ./nginx.service /etc/systemd/system/nginx.service
+sudo cp -v ./nginx.service /etc/systemd/system/nginx.service
 echo "Enabling the nginx as a service."
 sudo systemctl enable nginx.service
 sudo systemctl start nginx.service
