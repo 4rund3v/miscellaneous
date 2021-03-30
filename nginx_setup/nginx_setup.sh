@@ -1,5 +1,7 @@
 echo "This script installs nginx 1.18.0 as a service."
 
+sudo apt-get update
+
 echo "Downloading the necessary contents."
 ./download_dependencies.sh
 
