@@ -1,6 +1,6 @@
 sudo add-apt-repository ppa:certbot/certbot
 sudo apt-get update
-sudo apt-get install python-certbot-nginx
+sudo apt-get install python3-certbot-nginx
 
 printf("sudo nano /etc/nginx/sites-available/default" )
 printf("Replace the server_name _ with the name of the server ")
